@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "batool alsadah"
+author: "batool abbas alsadah"
 date: "4/2/2021"
 output: html_document
 ---
