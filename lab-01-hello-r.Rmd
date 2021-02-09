@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "batool abba alsadah"
+author: "batool abbas alsadah"
 date: "4/2/2021"
 output: html_document
 ---
@@ -16,5 +16,6 @@ library(datasauRus)
 
 
 ### Lab Exercise
+answer for task3
 
 (A different dataset in which the data is written to appear as statistics, you need to put the code between three backticks followed by the following line on top of the code {r load-packages, message=FALSE}. See 'Load Packages' above as an example. Delete everything in these brackets after typing your answer.)
