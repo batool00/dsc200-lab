@@ -8,7 +8,6 @@ output: html_document
 University ID:2201003400
 
 ### Load packages
-A different dataset in which the data is written to appear as statistics
 ```{r load-packages, message=FALSE}
 library(tidyverse) 
 library(datasauRus)
@@ -16,6 +15,7 @@ library(datasauRus)
 
 
 ### Lab Exercise
+A different dataset in which the data is written to appear as statistics.
 answer for task4
 circle_data <- datasaurus_dozen %>% filter(dataset == "circle")
 > ggplot(data = circle_data,mapping = aes(x = x,y))+geom_point()
