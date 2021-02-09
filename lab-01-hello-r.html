@@ -203,8 +203,7 @@ library(datasauRus)</code></pre>
 </div>
 <div id="lab-exercise" class="section level3">
 <h3>Lab Exercise</h3>
-<p>answer for task4</p>
-<p>(A different dataset in which the data is written to appear as statistics, you need to put the code between three backticks followed by the following line on top of the code {r load-packages, message=FALSE}. See ‘Load Packages’ above as an example. Delete everything in these brackets after typing your answer.)</p>
+<p>answer for task4 circle_data &lt;- datasaurus_dozen %&gt;% filter(dataset == “circle”) &gt; ggplot(data = circle_data,mapping = aes(x = x,y))+geom_point() &gt; circle_data %&gt;% summarize(r =cor(x,y))</p>
 </div>
 
 

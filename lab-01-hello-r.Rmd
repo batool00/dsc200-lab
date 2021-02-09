@@ -17,5 +17,6 @@ library(datasauRus)
 
 ### Lab Exercise
 answer for task4
-
-(A different dataset in which the data is written to appear as statistics, you need to put the code between three backticks followed by the following line on top of the code {r load-packages, message=FALSE}. See 'Load Packages' above as an example. Delete everything in these brackets after typing your answer.)
+circle_data <- datasaurus_dozen %>% filter(dataset == "circle")
+> ggplot(data = circle_data,mapping = aes(x = x,y))+geom_point()
+> circle_data %>% summarize(r =cor(x,y))
