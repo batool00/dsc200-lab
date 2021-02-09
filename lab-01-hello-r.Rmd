@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Hello R"
-author: "batool abbas alsadah"
+author: "batool alsadah"
 date: "4/2/2021"
 output: html_document
 ---
@@ -19,4 +19,4 @@ library(datasauRus)
 answer for task4
 circle_data <- datasaurus_dozen %>% filter(dataset == "circle")
 > ggplot(data = circle_data,mapping = aes(x = x,y))+geom_point()
-> circle_data %>% summarize(r =cor(x,y))
+> circle_data %>% summarize(r =cor(x,y)) 
