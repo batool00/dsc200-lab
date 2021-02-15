@@ -18,6 +18,70 @@ library(datasauRus)
 lab 1
 Various dataset in which data is written to appear as statistics.
 We can represent data and calculate its value using symbols
+> library(tidyverse)
+>library(datasauRus)
+head(datasaurus_dozen)
+# A tibble: 6 x 3
+  dataset     x     y
+  <chr>   <dbl> <dbl>
+1 dino     55.4  97.2
+2 dino     51.5  96.0
+3 dino     46.2  94.5
+4 dino     42.8  91.4
+5 dino     40.8  88.3
+6 dino     38.7  84.9
+> summary(datasaurus_dozen)
+   dataset                x               y           
+ Length:1846        Min.   :15.56   Min.   : 0.01512  
+ Class :character   1st Qu.:41.07   1st Qu.:22.56107  
+ Mode  :character   Median :52.59   Median :47.59445  
+                    Mean   :54.27   Mean   :47.83510  
+                    3rd Qu.:67.28   3rd Qu.:71.81078  
+                    Max.   :98.29   Max.   :99.69468  
+> view(datasaurus_dozen)
+> datasaurus_dozen %>%count(dataset) %>%print(13)
+# A tibble: 13 x 2
+   dataset        n
+ * <chr>      <int>
+ 1 away         142
+ 2 bullseye     142
+ 3 circle       142
+ 4 dino         142
+ 5 dots         142
+ 6 h_lines      142
+ 7 high_lines   142
+ 8 slant_down   142
+ 9 slant_up     142
+10 star         142
+11 v_lines      142
+12 wide_lines   142
+13 x_shape      142
+> ?iris
+> ?iris
+> view(datasaurus_dozen)
+> datasaurus_dozen %>%count(dataset) %>%print(13)
+# A tibble: 13 x 2
+   dataset        n
+ * <chr>      <int>
+ 1 away         142
+ 2 bullseye     142
+ 3 circle       142
+ 4 dino         142
+ 5 dots         142
+ 6 h_lines      142
+ 7 high_lines   142
+ 8 slant_down   142
+ 9 slant_up     142
+10 star         142
+11 v_lines      142
+12 wide_lines   142
+13 x_shape      142
+> install.packages("datasauRus")
+Error in install.packages : Updating loaded packages
+
+Restarting R session...
+
+> install.packages("datasauRus")
 answer for task4
 dino_data <- datasaurus_dozen %>% filter(dataset == "dino")
 > ggplot(data = dino_data,mapping = aes(x = x,y))+geom_point()
